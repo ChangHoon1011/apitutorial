@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My First API",
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "http://apitutorial.test/api/v1",
+            "description": "테스트 서버"
+        },
+        {
+            "url": "http://apitutorial.real/api/v1",
+            "description": "실 서버"
+        }
+    ],
+    "paths": {
+        "/api/resource.json": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
